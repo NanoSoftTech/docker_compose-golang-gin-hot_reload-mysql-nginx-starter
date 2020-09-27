@@ -1,8 +1,10 @@
 # docker-golang-gin-hot_reload-mysql-nginx-starter
 
+You can start developing right away!
+
 ## Structure
 
-### api
+### REST API
 
 - golang:ver 1.15
   - gorm (ORM)
@@ -10,12 +12,12 @@
   - CompileDaemon (Hot reload)
 - dependency:go mod
 
-### MySQL
+### DBMS
 
 - mysql:ver 8.0.21
 - sample database:[world](https://dev.mysql.com/doc/index-other.html)
 
-### Nginx
+### Proxy
 
 - nginx:ver 1.19
   - port:8888
@@ -75,12 +77,12 @@ This is response.
 
 ```json
 {
-  data : {
-    ID : 1,
-    Name : "Kabul",
-    CountryCode : "AFG",
-    District : "Kabol",
-    Population : 1780000,
+  "data" : {
+    "ID" : 1,
+    "Name" : "Kabul",
+    "CountryCode" : "AFG",
+    "District" : "Kabol",
+    "Population" : 1780000,
   }
 }
 ```
